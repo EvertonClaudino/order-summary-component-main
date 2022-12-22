@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container{
+    margin: 4vh auto;
+    width: 410px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.image{
+    margin-bottom: 20px;
+
+}
+
+.image img{
+    width: 410px;
+    border-radius: 11px 11px 0px 0px;
+
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+.textBold{
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.text p:not(:first-child){
+    color: hsl(224, 23%, 55%);
+    line-height: 25px;
+}
+
+.music{
+    width: 350px;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.music p:not(:last-child){
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.music p:not(:first-child){
+    font-weight: 200;
+    color: hsl(224, 23%, 55%);
+}
+
+.music a{
+    font-weight: 600;
+    position: relative;
+    left: 80px;
+    color: hsl(245, 75%, 52%); ;
+}
+
+.btn-payment, .btn-cancel{
+    cursor: pointer;
+    padding: 15px;
+    width: 350px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .9em;
+    font-weight: 600;
+
+
+}
+
+.btn-payment{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    transition: .5s;
+}
+
+.btn-payment:hover{
+    background-color: hsla(245, 75%, 52%, 0.7);
+
+}
+
+.btn-cancel{
+    background-color: transparent;
+
+}
+
+/*MEDIA*/
+
+@media (max-width:834px) {
+    .container{
+        margin: 60px auto;
+        width: 500px;
+        height: 800px;
+    }
+
+    .image img{
+        width: 500px;
+    }
+    .textBold{
+        margin-top: 10px;
+    }
+
+    .text{
+        font-size: 1.3em;
+        width: 400px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .music{
+        width: 420px;
+        padding: 30px;
+        font-size: 1.4em;
+    }
+
+    .music img{
+        width: 60px;
+    }
+
+    .music a{
+        left: 60px;
+    }
+
+    .btn-payment, .btn-cancel{
+        width: 420px;
+        padding: 20px;
+        font-size: 1.3em;
+    }
+    
+}
+
+
+@media (max-width:414px) {
+    .container{
+        margin: 60px auto;
+        width: 360px;
+        height: 600px;
+    }
+
+    .image img{
+        width: 360px;
+    }
+
+    .textBold{
+        margin-top: -10px;
+    }
+
+    .text{
+        font-size: 1em;
+        width: 300px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .music{
+        width: 300px;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .music img{
+        width: 40px;
+    }
+
+    .music a{
+        left: 40px;
+    }
+
+    .btn-payment, .btn-cancel{
+        width: 300px;
+        padding: 15px;
+        font-size: 1em;
+    }
+    
+}
